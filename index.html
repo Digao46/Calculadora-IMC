@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 0 10px 0 0;
+      }
+
+      a:hover {
+        color: red;
+      }
+    </style>
+    <title>Calculadora IMC</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora IMC</h1>
+    </header>
+
+    <section>
+      <div class="frm">
+        <form method="post" action="resultImc.php">
+          <p><span class="asterisk">*</span> Campos obrigatórios</p>
+          <label for="weightArea" class="labelArea"
+            >Informe o Peso: <span class="asterisk">*</span></label
+          >
+          <input
+            type="number"
+            min="0"
+            step="0.010"
+            name="weightArea"
+            placeholder="em KG"
+            required
+          />
+          <br />
+          <br />
+          <label for="heightArea" class="labelArea"
+            >Informe a Altura:<span class="asterisk">*</span></label
+          >
+          <input
+            type="number"
+            min="0"
+            step="0.010"
+            name="heightArea"
+            placeholder="em Metros"
+            required
+          />
+          <br />
+          <br />
+          <input type="submit" class="submit" name="submit" value="Calcular" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        <a href="https://www.facebook.com/diogo.melo.9275439/"
+          >Desenvolvido por Dig❤️o</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
