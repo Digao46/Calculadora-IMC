@@ -41,8 +41,9 @@
         }
 
         a {
-            color: black;
+            color: white;
             text-decoration: none;
+            padding: 0 10px 0 0;
         }
 
         a:hover {
